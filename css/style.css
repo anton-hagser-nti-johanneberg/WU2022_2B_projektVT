@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
+:root {
+    --accent-color: #316def;
+    --second-accent-color: #2655BC;
+    --trout-color: #474b59;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,14 +13,12 @@
     list-style-type: none;
 }
 
-body {
+body, body * {
     font-family: "Inter", sans-serif;
 }
 
 header {
     width: 100%;
-
-    /* background: red; */
 }
 
 .nav {
@@ -25,12 +29,76 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    /* background: yellow; */
 }
 
 .nav-logo {
     width: 66px;
     height: 66px;
-    /* background: purple; */
+}
+
+.landning {
+    margin-top: 76px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.landning > .h2-accent {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.landning > .btn {
+    margin-top: 22px;
+}
+
+.bg-accent {
+    background-color: var(--accent-color);
+}
+
+.h2-accent {
+    color: var(--second-accent-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.h3-accent {
+    color: var(--trout-color);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn {
+    display: flex;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    border-style: none;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.btn-icon {
+    margin-left: 12px;
+}
+
+.btn-text {
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+
+.illustration {
+    width: 100%;
+    height: 100%;
+}
+
+.illustration > img {
+    width: 100%;
+    height: 100%;
+}
+
+.illustration {
+    margin-top: 42px;
 }
