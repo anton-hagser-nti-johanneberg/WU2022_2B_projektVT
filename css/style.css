@@ -78,6 +78,7 @@ header {
     border-style: none;
     border-width: 0px;
     cursor: pointer;
+    justify-content: center;
 }
 
 .btn-icon {
@@ -88,6 +89,7 @@ header {
     font-weight: 600;
     font-size: 16px;
     color: #fff;
+    text-align: center;
 }
 
 .illustration {
@@ -167,6 +169,42 @@ header {
     padding-right: 48px;
 }
 
+.contact-us-form-section {
+    margin: 32px;
+    margin-top: 64px;
+}
+
+.contact-us-form-section > form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-us-form-section > form > .contact-us-btn-wrapper > .btn {
+    width: 100%;
+    margin-top: 32px;
+}
+
+input, label {
+    display:block;
+}
+
+label {
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 8px;
+    border: none;
+    border: 1px solid var(--trout-color);
+}
+
 footer {
     margin-top: 48px;
     padding-top: 24px;
@@ -195,6 +233,7 @@ footer {
 .footer-link {
     margin-left: 4px;
     margin-right: 4px;
+    font-size: 14px;
     text-align: center;
 }
 
