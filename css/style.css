@@ -172,6 +172,9 @@ header {
 .contact-us-form-section {
     margin: 32px;
     margin-top: 64px;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
 }
 
 .contact-us-form-section > form {
@@ -179,6 +182,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex: 2;
 }
 
 .contact-us-form-section > form > .contact-us-btn-wrapper > .btn {
@@ -186,12 +190,16 @@ header {
     margin-top: 32px;
 }
 
-input, label {
-    display:block;
+input,
+label {
+    display: block;
+}
+
+label:not(:first-child) {
+    margin-top: 12px;
 }
 
 label {
-    margin-top: 12px;
     margin-bottom: 6px;
 }
 
@@ -200,9 +208,34 @@ input {
     justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
     border-radius: 8px;
     border: none;
     border: 1px solid var(--trout-color);
+}
+
+.contact-us-branding {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 230px;
+}
+
+.branding-element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+    gap: 36px;
+}
+
+.branding-icon {
+    font-size: 32px;
+}
+
+.branding-text {
+    font-size: 22px;
 }
 
 footer {
