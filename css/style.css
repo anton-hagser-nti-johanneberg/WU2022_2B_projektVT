@@ -37,19 +37,23 @@ header {
     height: 66px;
 }
 
-.landning {
+.landing {
     margin-top: 76px;
     margin-left: 32px;
     margin-right: 32px;
 }
 
-.landning > .landing-description > .h2-accent {
+.landing > .landing-description > .h2-accent {
     font-size: 21px;
     margin-bottom: 8px;
 }
 
-.landning > .landing-description > .btn {
+.landing > .landing-description > .btn {
     margin-top: 22px;
+}
+
+.landing-illustration {
+    max-width: 300px;
 }
 
 .bg-accent {
@@ -156,10 +160,14 @@ header {
     margin-top: 76px;
     margin-left: 32px;
     margin-right: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-us-btn-wrapper {
     width: 100%;
+    margin-top: 18px;
     display: flex;
     justify-content: center;
 }
@@ -293,4 +301,36 @@ footer {
     justify-content: center;
     padding-bottom: 18px;
     text-align: center;
+}
+
+@media only screen and (min-width: 650px) {
+    .landing {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 1020px) {
+    header {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .landing {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .contact-us {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .contact-us-form-section {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 12em;
+    }
 }
