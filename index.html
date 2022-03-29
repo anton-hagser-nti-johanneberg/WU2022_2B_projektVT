@@ -9,41 +9,28 @@
     </head>
     <body>
         <header>
-            <!-- <div class="hidden nav-menu">
-                <nav class="nav">
-                    <li></li>
-                    <li>
-                        <div class="nav-hamburger">
-                            <img src="./img/Close.svg" />
-                        </div>
-                    </li>
-                </nav>
-                <div class="nav-menu-stretch">
-                    <nav class="nav-menu-items">
-                        <li class="nav-menu-field">Home</li>
-                        <li class="nav-menu-field">Documentation</li>
-                        <li class="nav-menu-field">Tools</li>
-                        <li class="nav-menu-field">Pricing</li>
-                    </nav>
-                </div>
+            <div class="hidden nav-menu" id="hamburger-menu">
                 <div class="nav-footer">
                     <div class="nav-logo"><img src="./img/Logo.svg" /></div>
                     <h2 class="h2-accent nav-footer-logo">RocketStats</h2>
                 </div>
-            </div> -->
-            <nav class="nav">
-                <li>
-                    <div class="nav-logo">
-                        <a href="#"><img src="./img/Logo.svg" /></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-hamburger">
-                        <img src="./img/Hamburger.svg" />
-                    </div>
-                </li>
-            </nav>
+            </div>
+            <ul class="nav">
+                <div class="nav-logo">
+                    <a href="#"><img src="./img/Logo.svg" /></a>
+                </div>
+                <nav id="nav-items">
+                    <li>Home</li>
+                    <li>Documentation</li>
+                    <li>Tools</li>
+                    <li>Pricing</li>
+                </nav>
+            </ul>
+            <div class="nav-menu-hamburger" id="hamburger-icon">
+                <img src="./img/Hamburger.svg">
+            </div>
         </header>
+
         <!-- Landing page, urges the user to subscribe to the newsletter  -->
         <section class="landing">
             <div class="landing-description">
@@ -65,6 +52,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact us page, if the client wants more information -->
         <section class="contact-us">
             <h2 class="h2-accent">Are you as excited as we are?</h2>
             <h2 class="h3-accent">
@@ -81,6 +70,7 @@
                 </button>
             </div>
         </section>
+
         <footer>
             <div class="footer-links-wrapper">
                 <ul class="footer-links">
@@ -97,5 +87,7 @@
                 <p>© 2022. RocketStats AB. All Rights Reserved</p>
             </div>
         </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>

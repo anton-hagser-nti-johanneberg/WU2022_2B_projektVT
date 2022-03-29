@@ -110,13 +110,35 @@ header {
     margin-top: 42px;
 }
 
+nav {
+    display: flex;
+    gap: 32px;
+    font-size: 18px;
+    color: var(--second-accent-color);
+    font-weight: 400;
+}
+
+.nav-menu-hamburger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 3.6em;
+    margin-right: 32px;
+    color:#474b59;
+    display: none;
+}
+
+.nav-menu-hamburger:hover {
+    cursor: pointer;
+}
+
 .hidden {
-    overflow: hidden;
-    position: fixed;
-    height: 100%;
+    display: none;
 }
 
 .nav-menu {
+    overflow: hidden;
+    position: fixed;
     height: 100vh;
     width: 100vw;
     top: 0;
@@ -163,6 +185,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.contact-us > .h3-accent {
+    margin-top: 8px;
 }
 
 .contact-us-btn-wrapper {
@@ -312,8 +338,27 @@ footer {
     }
 }
 
+@media only screen and (max-width: 650px) {
+    nav {
+        position: fixed;
+        top: 0;
+        left: 50%;
+        gap: 1rem;
+        flex-direction: column;
+        color: white;
+        font-weight: 600;
+        margin-top: 8em;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .nav-menu-hamburger {
+        display: block;
+    }
+}
+
 @media only screen and (min-width: 1020px) {
-    header {
+    .nav {
         padding-left: 10%;
         padding-right: 10%;
     }
