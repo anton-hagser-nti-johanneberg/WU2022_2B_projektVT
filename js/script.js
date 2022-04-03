@@ -5,13 +5,8 @@ navItems = document.getElementById("nav-items");
 
 // Toggle hamburger menu on click, from hidden to shown and back
 function toggleHamburgerMenu() {
-    if (mobileNavBar.classList.contains("hidden")) {
-        navItems.classList.remove("hidden");
-        mobileNavBar.classList.remove("hidden");
-    } else {
-        navItems.classList.add("hidden");
-        mobileNavBar.classList.add("hidden");
-    }
+    navItems.classList.toggle("hidden");
+    mobileNavBar.classList.toggle("hidden");
 }
 
 // Toggle hamburger on click
@@ -35,4 +30,4 @@ function checkSizing() {
 }
 
 // Check sizing on load
-checkSizing()
+checkSizing();
