@@ -402,6 +402,7 @@ nav {
     margin-bottom: 8em;
     margin-left: 10%;
     margin-right: 10%;
+
     padding-top: 8em;
     padding-bottom: 8em;
 
@@ -414,19 +415,13 @@ nav {
     text-align: center;
 }
 
-.pricing > div > h1 {
-    font-size: 48px;
-}
-
-.pricing > div > p {
-    margin-top: 1rem;
-    margin-left: 18%;
-    margin-right: 18%;
-    word-wrap: break-word;
+.pricing > h1 {
+    text-align: center;
+    font-size: 36px;
 }
 
 .pricing-options {
-    margin-top: 8em;
+    margin-top: 6em;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -473,6 +468,47 @@ nav {
 
 .price:nth-child(3) > button {
     background-color: #9426bc;
+}
+
+/*
+ 
+      _    _                 _               
+     / \  | |__   ___  _   _| |_   _   _ ___ 
+    / _ \ | '_ \ / _ \| | | | __| | | | / __|
+   / ___ \| |_) | (_) | |_| | |_  | |_| \__ \
+  /_/   \_\_.__/ \___/ \__,_|\__|  \__,_|___/
+                                             
+ 
+*/
+
+.about-us {
+    margin-bottom: 8em;
+    margin-left: 32px;
+    margin-right: 32px;
+
+    padding-top: 8em;
+    padding-bottom: 8em;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-us > h1 {
+    text-align: center;
+    font-size: 36px;
+}
+
+.reasons {
+    margin-top: 6em;
+    padding: 1.5rem;
+
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+        rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.reason:nth-child(2) {
+    margin-top: 2em;
 }
 
 /*
@@ -626,6 +662,11 @@ footer {
         margin-left: 15%;
         margin-right: 15%;
         margin-bottom: 12em;
+    }
+
+    .about-us {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
