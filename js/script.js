@@ -1,7 +1,9 @@
+// Fetch required elements on load
 mobileNavBar = document.getElementById("hamburger-menu");
 hamburgerMenu = document.getElementById("hamburger-icon");
 navItems = document.getElementById("nav-items");
 
+// Toggle hamburger menu on click, from hidden to shown and back
 function toggleHamburgerMenu() {
     if (mobileNavBar.classList.contains("hidden")) {
         navItems.classList.remove("hidden");
@@ -12,14 +14,17 @@ function toggleHamburgerMenu() {
     }
 }
 
+// Toggle hamburger on click
 hamburgerMenu.addEventListener("click", (event) => {
     toggleHamburgerMenu();
 });
 
+// Check the window size on resize
 window.addEventListener("resize", (event) => {
     checkSizing();
 });
 
+// Close the hamburger menu if the user resizes the window to a size that is not mobile
 function checkSizing() {
     if (window.innerWidth > 650) {
         navItems.classList.remove("hidden");
@@ -29,4 +34,5 @@ function checkSizing() {
     }
 }
 
+// Check sizing on load
 checkSizing()

@@ -4,6 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="RocketStats, a web application that allows you to tracks and analyzes business statistics."
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <title>RocketStats | Home</title>
     </head>
@@ -11,61 +15,101 @@
         <header>
             <div class="hidden nav-menu" id="hamburger-menu">
                 <div class="nav-footer">
-                    <div class="nav-logo"><img src="./img/Logo.svg" /></div>
+                    <div class="nav-logo">
+                        <img src="./img/Logo.svg" alt="RocketStats Logo" />
+                    </div>
                     <h2 class="h2-accent nav-footer-logo">RocketStats</h2>
                 </div>
             </div>
-            <ul class="nav-wrapper">
+            <div class="nav-wrapper">
                 <div class="nav-logo">
-                    <a href="#"><img src="./img/Logo.svg" /></a>
+                    <a href="#" alt="RocketStats Logo"
+                        ><img src="./img/Logo.svg" alt="RocketStats"
+                    /></a>
                 </div>
                 <nav id="nav-items">
-                    <li><a class="nav-item nav-active" href="#">Home</a></li>
-                    <li><a class="nav-item" href="./pricing.html">Pricing</a></li>
-                    <li><a class="nav-item" href="./contact-us.html">Contact</a></li>
-                    <li><a class="nav-item" href="./about-us.html">About us</a></li>
+                    <a class="nav-item nav-active" href="#">Home</a>
+                    <a class="nav-item" href="./pricing.html">Pricing</a>
+                    <a class="nav-item" href="./contact-us.html">Contact</a>
+                    <a class="nav-item" href="./about-us.html">About us</a>
                 </nav>
-            </ul>
+            </div>
             <div class="nav-menu-hamburger" id="hamburger-icon">
-                <img src="./img/Hamburger.svg">
+                <img src="./img/Hamburger.svg" alt="Navigation" />
             </div>
         </header>
 
-        <!-- Landing page, urges the user to subscribe to the newsletter  -->
         <section class="landing">
             <div class="landing-description">
                 <h1 class="h2-accent">
                     Analyzing statistics for your business from day one.
                 </h1>
-                <h2 class="h3-accent">
+                <p class="h3-accent">
                     Sign up for our newsletter today and gain insight into the
                     future of data science.
-                </h2>
+                </p>
                 <button class="btn btn-with-icon bg-accent">
                     <p class="btn-text">Subscribe now</p>
-                    <img class="btn-icon" src="./img/Arrow.svg" />
+                    <img
+                        class="btn-icon"
+                        src="./img/Arrow.svg"
+                        alt="Arrow pointing to the right"
+                    />
                 </button>
             </div>
             <div class="landing-illustration-wrapper">
                 <div class="illustration">
-                    <img src="./img/Scenes02.svg" />
+                    <img
+                        src="./img/Scenes02.svg"
+                        alt="Illustration of two people analyzing statistics on a humongous mobile device."
+                    />
                 </div>
             </div>
         </section>
 
-        <section class="our-supporters">
-
+        <section class="advantages">
+            <h2 class="h2-accent">Our advantages</h2>
+            <p class="h3-accent">
+                We have industry standard advantages that are hard to come by,
+                our analytics solutions provide best in class support without
+                loss in quality.
+            </p>
+            <ul class="selling-points">
+                <li class="selling-point">
+                    <h3>Intuitive interface</h3>
+                    <p class="selling-point-text">
+                        We provide a simple and intuitive interface to track and
+                        analyze your business statistics.
+                    </p>
+                </li>
+                <li class="selling-point">
+                    <h3>Redundent data</h3>
+                    <p class="selling-point-text">
+                        Make your analytics redundent with us by taking the
+                        risks out of the equation.
+                    </p>
+                </li>
+                <li class="selling-point">
+                    <h3>Performant data collection</h3>
+                    <p class="selling-point-text">
+                        Application runtime, data collection and monitoring out
+                        of the box.
+                    </p>
+                </li>
+            </ul>
         </section>
 
-        <!-- Contact us page, if the client wants more information -->
         <section class="contact-us">
             <h2 class="h2-accent">Are you as excited as we are?</h2>
-            <h2 class="h3-accent">
+            <p class="h3-accent">
                 Contact us to learn more and experience the future of
                 analyticts.
-            </h2>
+            </p>
             <div class="landing-illustration illustration">
-                <img src="./img/Scenes01.svg" />
+                <img
+                    src="./img/Scenes01.svg"
+                    alt="An Illustration of somebody holding a phone which is displaying a graph and multiple diagrams."
+                />
             </div>
 
             <div class="contact-us-btn-wrapper">
@@ -84,7 +128,7 @@
                 </ul>
             </div>
             <div class="footer-logo">
-                <img src="./img/Logo.svg" />
+                <img src="./img/Logo.svg" alt="RocketStats Logo" />
                 <h1>RocketStats</h1>
             </div>
             <div class="footer-copyright">

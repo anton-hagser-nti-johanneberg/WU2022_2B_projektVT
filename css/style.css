@@ -145,7 +145,7 @@ header {
 
 nav {
     display: flex;
-    gap: 32px;
+    gap: 3rem;
     font-size: 18px;
     color: var(--second-accent-color);
     font-weight: 400;
@@ -153,15 +153,15 @@ nav {
 
 .nav-item {
     text-decoration: none;
-    color: #316def;
+    color: #000;
 }
 
 .nav-item:hover {
-    color: #2655bc;
+    color: #313543;
 }
 
 .nav-active {
-    color: #2655bc;
+    color: #313543;
     font-weight: 600;
 }
 
@@ -249,19 +249,62 @@ nav {
 
 .landing > .landing-description > .btn {
     margin-top: 2em;
-    padding: 3%;
-    padding-left: 10%;
-    padding-right: 10%;
 }
 
 .landing-illustration {
     max-width: 300px;
 }
 
-.our-supporters {
-    margin-top: 12em;
-    background-color: #316def;
-    height: 28em;
+.advantages {
+    padding: 2em;
+    margin-top: 8em;
+}
+
+.advantages > h2 {
+    text-align: center;
+}
+
+.advantages > p {
+    text-align: center;
+}
+
+.selling-points {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2em;
+    margin-top: 4em;
+}
+
+.selling-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f8f9fb;
+
+    padding-top: 5%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 5%;
+    border-radius: 1em;
+
+    border: 1px #474b5a solid;
+
+    height: 14em;
+}
+
+.selling-point > h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #313543;
+    margin-bottom: 8px;
+}
+
+.selling-point > p {
+    text-align: center;
 }
 
 .contact-us {
@@ -446,7 +489,7 @@ nav {
 footer {
     margin-top: 48px;
     padding-top: 24px;
-    background-color: #343741;
+    background-color: #313543;
 }
 
 .footer-links-wrapper {
@@ -518,6 +561,11 @@ footer {
         justify-content: space-between;
         align-items: center;
     }
+
+    .selling-points {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -560,6 +608,11 @@ footer {
     }
 
     .landing {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .advantages {
         padding-left: 10%;
         padding-right: 10%;
     }

@@ -13,44 +13,32 @@
     </head>
     <body>
         <header>
-            <!-- <div class="hidden nav-menu">
-                <nav class="nav">
-                    <li></li>
-                    <li>
-                        <div class="nav-hamburger">
-                            <img src="./img/Close.svg" />
-                        </div>
-                    </li>
-                </nav>
-                <div class="nav-menu-stretch">
-                    <nav class="nav-menu-items">
-                        <li class="nav-menu-field">Home</li>
-                        <li class="nav-menu-field">Documentation</li>
-                        <li class="nav-menu-field">Tools</li>
-                        <li class="nav-menu-field">Pricing</li>
-                    </nav>
-                </div>
+            <div class="hidden nav-menu" id="hamburger-menu">
                 <div class="nav-footer">
-                    <div class="nav-logo"><img src="./img/Logo.svg" /></div>
+                    <div class="nav-logo">
+                        <img src="./img/Logo.svg" alt="RocketStats Logo" />
+                    </div>
                     <h2 class="h2-accent nav-footer-logo">RocketStats</h2>
                 </div>
-            </div> -->
-            <nav class="nav">
-                <li>
-                    <div class="nav-logo">
-                        <a href="./index.html"><img src="./img/Logo.svg" /></a>
-                    </div>
-                </li>
-                <li>
-                    <div class="nav-hamburger">
-                        <img src="./img/Hamburger.svg" />
-                    </div>
-                </li>
-            </nav>
+            </div>
+            <div class="nav-wrapper">
+                <div class="nav-logo">
+                    <a href="./index.html" alt="RocketStats Logo"
+                        ><img src="./img/Logo.svg" alt="RocketStats"
+                    /></a>
+                </div>
+                <nav id="nav-items">
+                    <a class="nav-item" href="./index.html">Home</a>
+                    <a class="nav-item" href="./pricing.html">Pricing</a>
+                    <a class="nav-item" href="./contact-us.html">Contact</a>
+                    <a class="nav-item nav-active" href="#">About us</a>
+                </nav>
+            </div>
+            <div class="nav-menu-hamburger" id="hamburger-icon">
+                <img src="./img/Hamburger.svg" alt="Navigation" />
+            </div>
         </header>
-        <section class="about-us-section">
-            <h2>RocketStats Is More Than a Data Science Application</h2>
-        </section>
+
         <footer>
             <div class="footer-links-wrapper">
                 <ul class="footer-links">
@@ -60,12 +48,14 @@
                 </ul>
             </div>
             <div class="footer-logo">
-                <img src="./img/Logo.svg" />
+                <img src="./img/Logo.svg" alt="RocketStats Logo" />
                 <h1>RocketStats</h1>
             </div>
             <div class="footer-copyright">
                 <p>© 2022. RocketStats AB. All Rights Reserved</p>
             </div>
         </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>
