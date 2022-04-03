@@ -56,6 +56,7 @@ textarea {
     border-radius: 8px;
     border: none;
     border: 1px solid var(--trout-color);
+    resize: vertical;
 }
 
 /* Text stylings */
@@ -668,6 +669,10 @@ footer {
     .selling-points {
         flex-direction: row;
         align-items: center;
+    }
+
+    .nav-menu-hamburger {
+        display: none;
     }
 }
 
