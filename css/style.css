@@ -80,7 +80,7 @@ input {
     padding-right: 18px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border-radius: 25px;
+    border-radius: 500px;
     border-style: none;
     border-width: 0px;
     cursor: pointer;
@@ -158,6 +158,11 @@ nav {
 
 .nav-item:hover {
     color: #2655bc;
+}
+
+.nav-active {
+    color: #2655bc;
+    font-weight: 600;
 }
 
 .nav-menu-hamburger {
@@ -243,7 +248,10 @@ nav {
 }
 
 .landing > .landing-description > .btn {
-    margin-top: 22px;
+    margin-top: 2em;
+    padding: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .landing-illustration {
@@ -380,6 +388,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    gap: 2em;
 }
 
 .price {
@@ -416,7 +425,7 @@ nav {
 }
 
 .price:nth-child(2) > button {
-    background-color: #2655BC;
+    background-color: #2655bc;
 }
 
 .price:nth-child(3) > button {
@@ -534,6 +543,11 @@ footer {
         color: #dfdfdf;
     }
 
+    .nav-active {
+        color: #dfdfdf;
+        font-weight: 400;
+    }
+
     .nav-menu-hamburger {
         display: block;
     }
@@ -559,5 +573,15 @@ footer {
         margin-left: 15%;
         margin-right: 15%;
         margin-bottom: 12em;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    .pricing-options {
+        flex-direction: column;
+    }
+
+    .price {
+        align-self: center;
     }
 }
