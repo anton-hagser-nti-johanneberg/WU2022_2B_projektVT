@@ -618,12 +618,16 @@ path:nth-child(6) {
     margin-top: 8rem;
 
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
     grid-template-areas:
-        "grid-open-source grid-branding grid-branding grid-branding"
-        "grid-our-passion grid-founded grid-founded grid-work-for-us"
-        "grid-our-goal grid-rocketstats grid-rocketstats grid-work-for-us";
+        "grid-open-source"
+        "grid-branding"
+        "grid-our-passion"
+        "grid-founded"
+        "grid-work-for-us"
+        "grid-our-goal"
+        "grid-rocketstats";
 }
 
 .about-us-grid-element {
@@ -642,13 +646,13 @@ path:nth-child(6) {
 
 .about-us-grid-founded {
     grid-area: grid-founded;
-    background-color: #cb904d;
+    background-color: #884902;
     color: white;
 }
 
 .about-us-grid-work-for-us {
     grid-area: grid-work-for-us;
-    background-color: blueviolet;
+    background-color: #550c99;
     color: white;
 }
 
@@ -659,7 +663,7 @@ path:nth-child(6) {
 
 .about-us-grid-our-passion {
     grid-area: grid-our-passion;
-    background-color: #ef233c;
+    background-color: #a50c1f;
     color: white;
 }
 
@@ -701,8 +705,8 @@ path:nth-child(6) {
 }
 
 .employee {
-    width: 20%;
-    height: 20%;
+    width: 20em;
+    height: 20em;
 
     border-radius: 15px;
     padding: 2em;
@@ -893,6 +897,15 @@ footer {
     .about-us {
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .about-us-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "grid-open-source grid-branding grid-branding grid-branding"
+            "grid-our-passion grid-founded grid-founded grid-work-for-us"
+            "grid-our-goal grid-rocketstats grid-rocketstats grid-work-for-us";
     }
 }
 
