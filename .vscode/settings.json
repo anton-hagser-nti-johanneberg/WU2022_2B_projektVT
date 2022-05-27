@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.port": 35511
+    "liveServer.settings.port": 35511,
+    "rpc.enabled": true
 }

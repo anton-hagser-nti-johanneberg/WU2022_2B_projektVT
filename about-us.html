@@ -43,11 +43,7 @@
                     <a class="nav-item nav-active" href="#">About us</a>
                 </nav>
             </div>
-            <div
-                class="nav-menu-hamburger"
-                id="hamburger-icon"
-                onclick="this.classList.toggle('active')"
-            >
+            <div class="nav-menu-hamburger" id="hamburger-icon">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="90"
@@ -97,35 +93,109 @@
         <section class="about-us">
             <h1>About RocketStats</h1>
 
-            <ul class="reasons">
-                <li class="reason">
-                    <h2>Who we are</h2>
+            <div class="about-us-grid">
+                <article class="about-us-grid-element about-us-grid-founded">
+                    <h2>Founded in 2022</h2>
                     <p>
-                        Consequat est ea deserunt laborum eu sunt officia cillum
-                        in cupidatat ad veniam eu sint. Dolor in in qui mollit
-                        duis officia. Cillum non ea duis aute minim. Esse ea
-                        veniam amet officia aute eiusmod exercitation. Lorem
-                        consequat amet cillum incididunt exercitation sunt sunt
-                        id ut ex incididunt cupidatat.
+                        Brought to you by an experienced team of engineers from
+                        around the world.
                     </p>
-                </li>
+                </article>
+                <article
+                    class="about-us-grid-element about-us-grid-work-for-us"
+                >
+                    <h2>Work for us</h2>
+                    <p>
+                        Culpa anim dolore irure laborum reprehenderit occaecat
+                        reprehenderit quis aliquip adipisicing eu esse culpa.
+                    </p>
+                </article>
+                <article class="about-us-grid-element about-us-grid-our-goal">
+                    <h2>Our goal</h2>
+                    <p>
+                        By working together we can develop something never
+                        witnessed before, a tool so sophisticated that it
+                        literally blows peoples minds.
+                    </p>
+                </article>
+                <article
+                    class="about-us-grid-element about-us-grid-our-passion"
+                >
+                    <h2>Our passion</h2>
+                    <p>Laboris id est deserunt dolore nisi veniam.</p>
+                </article>
+                <article class="about-us-grid-element about-us-grid-branding">
+                    <h2>Branding</h2>
+                    <p>
+                        We started out as a coffee shop and developed into what
+                        is now seen as the future of aviation.
+                    </p>
+                </article>
+                <article
+                    class="about-us-grid-element about-us-grid-rocketstats"
+                >
+                    <h2>RocketStats</h2>
+                    <p>
+                        Cillum est in aliquip velit dolore tempor cupidatat eu.
+                    </p>
+                </article>
+                <article
+                    class="about-us-grid-element about-us-grid-open-source"
+                >
+                    <h2>We &#60;3 Open Source</h2>
+                    <p>
+                        We truly believe in open source and that's why all our
+                        software is public and comes with extremely strict
+                        licenses.
+                    </p>
+                </article>
+            </div>
+        </section>
 
-                <li class="reason">
-                    <h2>What we do</h2>
-                    <p>
-                        Exercitation voluptate eiusmod labore velit minim non ad
-                        aliqua qui. Occaecat enim elit non exercitation ea
-                        nostrud veniam. Non dolore voluptate adipisicing officia
-                        excepteur. Consequat adipisicing reprehenderit fugiat
-                        duis duis laboris aute enim qui nulla nisi ad
-                        consectetur sunt. Sit elit ad est proident dolor. Ipsum
-                        excepteur magna ullamco cillum occaecat do eiusmod
-                        eiusmod. Tempor voluptate esse consequat officia dolor
-                        occaecat. Magna anim laboris reprehenderit enim nisi
-                        consectetur consectetur.
-                    </p>
-                </li>
-            </ul>
+        <section class="who-we-are">
+            <h2>Our employees</h2>
+            <div class="employee-wrapper">
+                <article class="employee">
+                    <img
+                        src="./img/user.svg"
+                        alt="profile picture of employee #1"
+                    />
+                    <h3>Joe Christ</h3>
+                    <p>Software Engineer</p>
+                </article>
+                <article class="employee">
+                    <img
+                        src="./img/user.svg"
+                        alt="profile picture of employee #1"
+                    />
+                    <h3>Smith Joe</h3>
+                    <p>Coffee Engineer</p>
+                </article>
+                <article class="employee">
+                    <img
+                        src="./img/user.svg"
+                        alt="profile picture of employee #1"
+                    />
+                    <h3>Jon Smith</h3>
+                    <p>President of RocketStats</p>
+                </article>
+                <article class="employee">
+                    <img
+                        src="./img/user.svg"
+                        alt="profile picture of employee #1"
+                    />
+                    <h3>Non Existante</h3>
+                    <p>Chief Engineer</p>
+                </article>
+                <article class="employee">
+                    <img
+                        src="./img/user.svg"
+                        alt="profile picture of employee #1"
+                    />
+                    <h3>Jesus Smith</h3>
+                    <p>Coffee Taster</p>
+                </article>
+            </div>
         </section>
 
         <footer>
@@ -145,9 +215,9 @@
                 />
                 <h2>RocketStats</h2>
             </div>
-            <div class="footer-copyright">
-                <p>© 2022. RocketStats AB. All Rights Reserved</p>
-            </div>
+            <p class="footer-copyright">
+                © 2022. RocketStats AB. All Rights Reserved
+            </p>
         </footer>
 
         <script src="./js/script.js"></script>
